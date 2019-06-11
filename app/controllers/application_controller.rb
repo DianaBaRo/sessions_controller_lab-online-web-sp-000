@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   def hello
     if session[:name]
-      render "hello"
+      render "application/hello"
     else
       redirect_to controller: 'sessions', action: 'new'
     end
