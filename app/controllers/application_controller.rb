@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     if session[:name]
       render "hello"
     else
-      redirect_to "/login"
+      redirect_to "/"
     end
   end
   
